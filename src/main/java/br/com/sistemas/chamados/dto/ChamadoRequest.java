@@ -1,6 +1,6 @@
 package br.com.sistemas.chamados.dto;
 
-import br.com.sistemas.chamados.enums.Prioridade;
+import br.com.sistemas.chamados.enuns.Prioridade;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;

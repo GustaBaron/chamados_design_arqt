@@ -1,7 +1,7 @@
 package br.com.sistemas.chamados.entity;
 
-import br.com.sistemas.chamados.enums.Prioridade;
-import br.com.sistemas.chamados.enums.StatusChamado;
+import br.com.sistemas.chamados.enuns.Prioridade;
+import br.com.sistemas.chamados.enuns.StatusChamado;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;

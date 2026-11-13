@@ -1,6 +1,6 @@
 package br.com.sistemas.chamados.entity;
 
-import br.com.sistemas.chamados.enums.Perfil;
+import br.com.sistemas.chamados.enuns.Perfil;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;

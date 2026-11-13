@@ -7,8 +7,8 @@ import br.com.sistemas.chamados.dto.ChamadoStatusRequest;
 import br.com.sistemas.chamados.entity.Categoria;
 import br.com.sistemas.chamados.entity.Chamado;
 import br.com.sistemas.chamados.entity.Cliente;
-import br.com.sistemas.chamados.enums.Prioridade;
-import br.com.sistemas.chamados.enums.StatusChamado;
+import br.com.sistemas.chamados.enuns.Prioridade;
+import br.com.sistemas.chamados.enuns.StatusChamado;
 import br.com.sistemas.chamados.exception.RecursoNaoEncontradoException;
 import br.com.sistemas.chamados.exception.RegraNegocioException;
 import br.com.sistemas.chamados.repository.ChamadoRepository;
@@ -81,10 +81,10 @@ public class ChamadoService {
 
     @Transactional
     public ChamadoResponse atribuirTecnico(Long id, ChamadoAtribuirRequest dto) {
-        if (repository.existsByStatus(StatusChamado.FECHADO)) {
+        Chamado chamado = buscarEntity(id);
+        if (chamado.getStatus() == StatusChamado.FECHADO) {
             throw new RegraNegocioException("Não é possível atribuir um Técnico a um chamado Fechado");
         }
-        Chamado chamado = buscarEntity(id);
         chamado.setTecnico(tecnicoService.buscarEntity(dto.tecnicoId()));
         return ChamadoResponse.de(chamado);
     }
