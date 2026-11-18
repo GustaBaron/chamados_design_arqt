@@ -3,8 +3,8 @@ package br.com.sistemas.chamados.dto;
 import br.com.sistemas.chamados.entity.Chamado;
 import br.com.sistemas.chamados.entity.Comentario;
 import br.com.sistemas.chamados.entity.Tecnico;
-import br.com.sistemas.chamados.enums.Prioridade;
-import br.com.sistemas.chamados.enums.StatusChamado;
+import br.com.sistemas.chamados.enuns.Prioridade;
+import br.com.sistemas.chamados.enuns.StatusChamado;
 
 import java.time.LocalDateTime;
 import java.util.Comparator;

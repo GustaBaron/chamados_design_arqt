@@ -1,4 +1,4 @@
-package br.com.sistemas.chamados.enums;
+package br.com.sistemas.chamados.enuns;
 
 public enum StatusChamado {
     ABERTO,

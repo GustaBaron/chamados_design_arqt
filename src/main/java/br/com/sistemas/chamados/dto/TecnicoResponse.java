@@ -1,7 +1,7 @@
 package br.com.sistemas.chamados.dto;
 
 import br.com.sistemas.chamados.entity.Tecnico;
-import br.com.sistemas.chamados.enums.Perfil;
+import br.com.sistemas.chamados.enuns.Perfil;
 
 public record TecnicoResponse(
 

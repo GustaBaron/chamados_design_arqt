@@ -1,6 +1,6 @@
 package br.com.sistemas.chamados.dto;
 
-import br.com.sistemas.chamados.enums.Perfil;
+import br.com.sistemas.chamados.enuns.Perfil;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

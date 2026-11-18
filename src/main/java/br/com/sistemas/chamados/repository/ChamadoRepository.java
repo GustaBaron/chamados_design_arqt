@@ -1,8 +1,8 @@
 package br.com.sistemas.chamados.repository;
 
 import br.com.sistemas.chamados.entity.Chamado;
-import br.com.sistemas.chamados.enums.Prioridade;
-import br.com.sistemas.chamados.enums.StatusChamado;
+import br.com.sistemas.chamados.enuns.Prioridade;
+import br.com.sistemas.chamados.enuns.StatusChamado;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.EntityGraph;
